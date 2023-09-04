@@ -1,0 +1,242 @@
+
+body {
+    background: #182028;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+h1 {
+    font-size: 9vmin;
+    color: #8bf;
+    text-align: left;
+    font-family: Lato, sans-serif;
+    font-weight: 700;
+    margin: 1rem 0 1rem 2rem;
+  }
+  
+  /* Typewriter effect 1 */
+  @keyframes typing {
+    0.0000%, 27.3488% { content: ""; }
+    1.1395%, 26.2093% { content: "m"; }
+    2.2791%, 25.0698% { content: "ma"; }
+    3.4186%, 23.9302% { content: "mat"; }
+    4.5581%, 22.7907% { content: "math"; }
+    5.6977%, 21.6512% { content: "mathe"; }
+    6.8372%, 20.5116% { content: "mathem"; }
+    7.9767%, 19.3721% { content: "mathema"; }
+    9.1163%, 18.2326% { content: "mathemat"; }
+    10.2558%, 17.0930% { content: "mathemati"; }
+    12.2558%, 17.0930% { content: "mathematic"; }
+    13.2558%, 17.0930% { content: "mathematici"; }
+    14.2558%, 17.0930% { content: "mathematicia"; }
+    16.2558%, 17.0930% { content: "mathematician"; }
+  
+    30.7674%, 51.2791% { content: ""; }
+    31.9070%, 50.1395% { content: "m"; }
+    33.0465%, 49.0000% { content: "ma"; }
+    34.1860%, 47.8605% { content: "ma'"; }
+    35.3256%, 46.7209% { content: "ma'a"; }
+    36.4651%, 45.5814% { content: "ma'am"; }
+  
+    54.6977%, 75.2093% { content: ""; }
+    55.8372%, 74.0698% { content: "i"; }
+    56.9767%, 72.9302% { content: "in"; }
+    58.1163%, 71.7907% { content: "inc"; }
+    59.2558%, 70.6512% { content: "inch"; }
+    60.3953%, 69.5116% { content: "incha"; }
+    61.5349%, 68.3721% { content: "inchar"; }
+    62.5349%, 68.3721% { content: "incharg"; }
+    63.5349%, 68.3721% { content: "incharge"; }
+  
+    78.6279%, 96.8605% { content: ""; }
+    79.7674%, 95.7209% { content: "c"; }
+    80.9070%, 94.5814% { content: "ca"; }
+    82.0465%, 93.4419% { content: "cal"; }
+    83.1860%, 92.3023% { content: "calc"; }
+    84.3256%, 91.1628% { content: "calcu"; }
+    85.3256%, 91.1628% { content: "calcul"; }
+    86.3256%, 91.1628% { content: "calcula"; }
+    87.3256%, 91.1628% { content: "calculat"; }
+    88.3256%, 91.1628% { content: "calculate"; }
+    89.3256%, 91.1628% { content: "calculater"; }
+  }
+  
+  @keyframes blink {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0; }
+  }
+  
+  .typewriter {
+    --caret: currentcolor;
+  }
+  
+  .typewriter::before {
+    content: "";
+    animation: typing 13.5s infinite;
+  }
+  
+  .typewriter::after {
+    content: "";
+    border-right: 1px solid var(--caret);
+    animation: blink 0.5s linear infinite;
+  }
+  
+  .typewriter.thick::after {
+    border-right: 1ch solid var(--caret);
+  }
+  
+  .typewriter.nocaret::after {
+    border-right: 0;
+  }
+  
+  
+  @media (prefers-reduced-motion) {
+    .typewriter::after {
+      animation: none;
+    }
+    
+    @keyframes sequencePopup {
+      0%, 100% { content: "developer"; }
+      25% { content: "writer"; }
+      50% { content: "reader"; }
+      75% { content: "human"; }
+    }
+  
+    .typewriter::before {
+      content: "developer";
+      animation: sequencePopup 12s linear infinite;
+    }
+  }
+
+header {
+    text-align: center;
+    padding: 10px;
+    background-color: #e76705;
+    color: #fff;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+}
+
+.image {
+    text-align: center;
+    padding: 60px;
+    background-color: #082032;
+    border-radius: 40px;
+    box-shadow: 0 4px 6px rgba(255, 0, 0, 0.1);
+}
+
+.image img{
+    width: 150px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+.image-container:hover img {
+    transform: scale(3);
+}
+
+.animation {
+    animation: slideRight 2s ease-in-out infinite;
+}
+
+.box {
+    background-color: #09ecb7;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+@keyframes slideRight {
+    0% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(50px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.container{
+    /* CSS */
+    .button-86 {
+      all: unset;
+      width: 100px;
+      height: 30px;
+      font-size: 16px;
+      background: transparent;
+      border: none;
+      position: relative;
+      color: #f0f0f0;
+      cursor: pointer;
+      z-index: 1;
+      padding: 10px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      white-space: nowrap;
+      user-select: none;
+      -webkit-user-select: none;
+      touch-action: manipulation;
+    }
+    
+    .button-86::after,
+    .button-86::before {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      z-index: -99999;
+      transition: all .4s;
+    }
+    
+    .button-86::before {
+      transform: translate(0%, 0%);
+      width: 100%;
+      height: 100%;
+      background: #28282d;
+      border-radius: 10px;
+    }
+    
+    .button-86::after {
+      transform: translate(10px, 10px);
+      width: 35px;
+      height: 35px;
+      background: #ffffff15;
+      backdrop-filter: blur(5px);
+      -webkit-backdrop-filter: blur(5px);
+      border-radius: 50px;
+    }
+    
+    .button-86:hover::before {
+      transform: translate(5%, 20%);
+      width: 110%;
+      height: 110%;
+    }
+    
+    .button-86:hover::after {
+      border-radius: 10px;
+      transform: translate(0, 0);
+      width: 100%;
+      height: 100%;
+    }
+    
+    .button-86:active::after {
+      transition: 0s;
+      transform: translate(0, 5%);
+    }
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #e76705;
+    color: #ffffff;
+}
